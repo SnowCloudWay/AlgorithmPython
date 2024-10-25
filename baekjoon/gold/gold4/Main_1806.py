@@ -7,6 +7,7 @@ n, s = map(int, input().split())
 nums = list(map(int, input().split()))
 intervalSum = 0
 minLen = n
+check = 0
 end = 0
 
 for start in range(n):
@@ -15,6 +16,10 @@ for start in range(n):
         end += 1
     if intervalSum >= s:
         minLen = min(minLen, end - start)
+        check = 1
     intervalSum -= nums[start]
 
-sys.stdout.write(str(minLen))
+if check == 1:
+    sys.stdout.write(str(minLen))
+else:
+    sys.stdout.write(str(0))

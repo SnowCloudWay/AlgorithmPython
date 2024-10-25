@@ -1,7 +1,5 @@
 # Silver I _ 25916 _ 싫은데요
 
-# 다시 풀기
-
 import sys
 input = sys.stdin.readline
 
