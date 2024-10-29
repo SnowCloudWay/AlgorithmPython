@@ -1,5 +1,7 @@
 # Silver I _ 20923 _ 숫자 할리갈리 게임
 
+# python으로 제출하면 시간 초과 / pypy는 통과
+
 import sys
 from collections import deque
 input = sys.stdin.readline
